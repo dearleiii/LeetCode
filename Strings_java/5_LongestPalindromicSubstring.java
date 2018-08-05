@@ -1,3 +1,6 @@
+// Novel idea: Expand Around the center 
+// Notice: Consider both the case of odd && even
+
 class Solution {
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1) return "";
