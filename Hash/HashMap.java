@@ -1,3 +1,5 @@
+// Notes: HashMap doesnt preserve any order by default 
+
 import java.util.HashMap;
 import java.util.Map;
 
