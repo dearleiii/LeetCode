@@ -1,5 +1,6 @@
 // Java.lang.StringBuilder Class 
 // A mutable sequence of characters 
+// Advantages: Mutable && No need for primary type conversion 
 
 // StringBuilder append(boolean b)
 StringBuilder str = new StringBuilder("complie ");
