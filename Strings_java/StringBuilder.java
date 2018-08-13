@@ -18,3 +18,7 @@ char[] cArr = new char[]{'o', 'n', 'l' .... };
 str.append(cArr);
 
 
+// Clear a stringbuilder 
+strbuilder.setLength(0);
+
+
