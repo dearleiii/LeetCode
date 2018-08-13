@@ -12,3 +12,8 @@ System.out.println(result);
 Character.isDigit(string.charAt(index)) 
 Character.isLetter(string.charAt(index))
 
+  
+// 3. PriorityQueue
+  // objects supposed to be porcessed based on priority : FIFO 
+  // i.e. integer: small -> large 
+  
