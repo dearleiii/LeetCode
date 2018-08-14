@@ -9,6 +9,7 @@ map.getOrDefault(idNum, "John Doe"));
 
 // 3. TreeMap 
 // Concept: implement Map interface using a tree: guarantees the elements be sorted in an ascending order 
+// worse general performace than HashMap/ Linked HashMap 
 void clear();
 boolean containsKey();
 map.firstKey();
