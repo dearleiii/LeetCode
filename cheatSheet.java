@@ -17,6 +17,8 @@ map.lastKey();
 Set<Integer> keysLessThan3 = map.headMap(3).keySet();
 Set<Integer> keysGreaterThanEqTo3 = map.tailMap(3).keySet();
 
+// 4. String: 
+str.length();
 
 // 2. Conversion 
 String str = "testString";
