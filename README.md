@@ -5,7 +5,9 @@ A recording of my LeetCode professional journal
 
 ## HashMap 
 containsKey(Object key)
+
 containsValue(Object value)
+
 get(Object key)
 
-Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+// Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
