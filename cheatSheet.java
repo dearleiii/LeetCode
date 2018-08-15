@@ -19,6 +19,10 @@ Set<Integer> keysGreaterThanEqTo3 = map.tailMap(3).keySet();
 
 // 4. String: 
 str.length();
+string1.equals(string2); // == compare the reference 
+
+// 5. Array: []
+array.length;
 
 // 2. Conversion 
 String str = "testString";
