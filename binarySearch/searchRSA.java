@@ -66,3 +66,9 @@ public class Solution {
 // !! Note!!!
 while (start+1 < end) 
     // to avoid time limit exceed
+if: while (start < end) {
+    update mid: mid = start;
+    update: start: start = mid; 
+    -> CANT break while loop
+}
+    
