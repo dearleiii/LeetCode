@@ -21,6 +21,7 @@ class Solution {
 }
 
 // Method2. Bit manipulation 
+	// ^: return 0 when same value, else: return the bit value 
 public char findTheDifference(String s, String t) {
 	char c = 0;
 	for (int i = 0; i < s.length(); ++i) {
