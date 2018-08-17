@@ -29,6 +29,8 @@ class Solution {
 
 // Method2: same idea, 2 pointers, -> When two chars are not equal, 
     // try to skip (pseudo delete) either left one or right one and continue checking.
+
+// Important note!! consider both deletion cases, rather than only one 
     
 class Solution {
     public boolean validPalindrome(String s) {
