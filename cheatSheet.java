@@ -44,6 +44,8 @@ array.length;
 Arrays.sort(int[]);
 boolean arrlist.contains(Object item); 
 boolean list.add(Object item);
+// add several items together: 
+res.add(Arrays.asList(num[i], num[lo], num[hi]));
 
 // 8. boolean (primitive type)
 boolean[] array = new boolean[size]; // initialized to false 
