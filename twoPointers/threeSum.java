@@ -44,6 +44,8 @@ class Solution {
 }
 
 // Standard: 67.37% same idea, consice implementation 
+// important : use while to 
+    // skip equal elements to avoid duplicates in the answer without making a set or smth like that.
 public List<List<Integer>> threeSum(int[] num) {
     Arrays.sort(num);
     List<List<Integer>> res = new LinkedList<>(); 
