@@ -68,3 +68,7 @@ public List<Integer> findAnagrams(String s, String p) {
     
     return result;
 }
+
+
+// Notes!!
+    // chars[s.charAt(end++) - 'a'] in order to find index!
