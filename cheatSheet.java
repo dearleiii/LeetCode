@@ -3,6 +3,7 @@ containsKey(Object key)
 containsValue(Object value)
 get(Object key). // Returns or null if this map contains no mapping for the key.
 map.getOrDefault(idNum, "John Doe"));
+for (Object each: map.values()) {}
 
 // 2. HashSet
 Set<Integer> set = new HashSet<Integer>();
