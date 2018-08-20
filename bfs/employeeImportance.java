@@ -7,7 +7,7 @@ class Solution {
         emap = new HashMap<>();
         int i = 1;
         for (Employee employee: employees) {
-            emap.put(i++, employee);
+            emap.put(i++, employee);     // change the line to : emap.put(employee.id, employee);
         }
         return dfs(queryid);
     }
