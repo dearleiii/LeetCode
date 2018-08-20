@@ -34,6 +34,16 @@ class Solution {
 
 
 // Fast : 94% Sliding window 
+    // 1. Construct a map of 26 characters: recording how many / exceed the chars in p
+            // if exceed: recording as '-' 
+        chars[c - 'a']++;
+    // 2. start = 0, end = 0;
+    // 3. Go over the string: 
+        if (map.charAt(end) >= 0) // appeared in p
+            count--; end++;
+        else if (end - start == p.length() && )
+                
+
 public List<Integer> findAnagrams(String s, String p) {
     int[] chars = new int[26];
     List<Integer> result = new ArrayList<>();
