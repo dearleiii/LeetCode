@@ -41,6 +41,9 @@ static String valueOf(boolean b/ char c/ char[] data/ double d/ float f/ int i/ 
 
 // 5. Array: []
 array.length;
+Arrays.sort(int[]);
+boolean arrlist.contains(Object item); 
+boolean list.add(Object item);
 
 // 8. boolean (primitive type)
 boolean[] array = new boolean[size]; // initialized to false 
