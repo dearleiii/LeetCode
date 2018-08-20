@@ -4,6 +4,10 @@ containsValue(Object value)
 get(Object key). // Returns or null if this map contains no mapping for the key.
 map.getOrDefault(idNum, "John Doe"));
 for (Object each: map.values()) {}
+boolean map.isEmpty();
+map.remove(Object key);
+// copy a map, need to initialize another map first 
+
 
 // 2. HashSet
 Set<Integer> set = new HashSet<Integer>();
