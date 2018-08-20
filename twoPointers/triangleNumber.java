@@ -4,7 +4,8 @@
   // else when: p1+p2 <= target, all p1+2~p2 are bad! -> next check: p1++;
   
  // My broken: 
-  // 200 / 220 test cases passed. TLExceed
+  // 200 / 220 test cases passed. TLExceed 
+  // fix small bug: not to println -> 69%
   
  class Solution {
     public int triangleNumber(int[] nums) {
@@ -29,3 +30,4 @@
         return cnt;
     }
 }
+
