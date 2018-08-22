@@ -38,6 +38,8 @@ substring(int beginIndex, int endIndex);
 toCharArray();
 // return string representation
 static String valueOf(boolean b/ char c/ char[] data/ double d/ float f/ int i/ Object obj);
+str.toLowerCase();
+str.toUpperCase();
 
 // 5. Array: []
 array.length;
