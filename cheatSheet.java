@@ -1,3 +1,9 @@
+// Collections
+  // for interface that inherit from Collections, methods can all be applied
+addAll, clear, contains, containsAll, equals, hashCode, isEmpty, iterator, remove, removeAll, retainAll, size, toArray, toArray;
+  // other functions: 
+Collections.reverse(list);
+
 // HashMap 
 containsKey(Object key)
 containsValue(Object value)
