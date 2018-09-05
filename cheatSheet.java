@@ -1,4 +1,4 @@
-// 1. HashMap 
+// HashMap 
 containsKey(Object key)
 containsValue(Object value)
 get(Object key). // Returns or null if this map contains no mapping for the key.
@@ -9,7 +9,7 @@ map.remove(Object key);
 // copy a map, need to initialize another map first 
 
 
-// 2. HashSet
+// HashSet
 Set<Integer> set = new HashSet<Integer>();
 set.add();
 set.clear();
@@ -18,7 +18,7 @@ set.isEmpty();
 set.remove();
 set.size();
 
-// 3. TreeMap 
+// TreeMap 
 // Concept: implement Map interface using a tree: guarantees the elements be sorted in an ascending order 
 // worse general performace than HashMap/ Linked HashMap 
 void clear();
@@ -28,7 +28,17 @@ map.lastKey();
 Set<Integer> keysLessThan3 = map.headMap(3).keySet();
 Set<Integer> keysGreaterThanEqTo3 = map.tailMap(3).keySet();
 
-// 4. String: 
+// Queue<E>
+boolean add(E e); // fail to insert in capacity restricted case
+boolean offer (E e);
+  // subtype od Collection class, inherits all the methods 
+size();
+isEmpty();
+contains();
+clear();
+equals();
+
+// String: 
 str.length();
 string1.equals(string2); // == compare the reference 
 replace(char oldChar, char newChar);
@@ -41,7 +51,7 @@ static String valueOf(boolean b/ char c/ char[] data/ double d/ float f/ int i/ 
 str.toLowerCase();
 str.toUpperCase();
 
-// 5. Array: []
+// Array: []
 array.length;
 Arrays.sort(int[]);
 boolean arrlist.contains(Object item); 
@@ -50,10 +60,10 @@ boolean list.add(Object item);
 res.add(Arrays.asList(num[i], num[lo], num[hi]));
 arr.get(intdex);
 
-// 8. boolean (primitive type)
+// boolean (primitive type)
 boolean[] array = new boolean[size]; // initialized to false 
 // Boolean: warpper object for a boolean 
 
-// 2. Conversion 
+// Conversion 
 String str = "testString";
 char[] charArray = str.toCharArray();
