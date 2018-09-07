@@ -52,3 +52,5 @@ class Solution {
 
 
 // Fixed: 
+    // need to check the original wordList -> whether exist duplicates
+    // use HashSet to construct a new unique wordList 
