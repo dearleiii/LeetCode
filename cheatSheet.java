@@ -56,7 +56,14 @@ toCharArray();
 static String valueOf(boolean b/ char c/ char[] data/ double d/ float f/ int i/ Object obj);
 str.toLowerCase();
 str.toUpperCase();
+// replace string 
+StringBuilder myName = new StringBuilder("domanokz");
+myName.setCharAt(4, 'x');
+myName.toString();
 
+String newName = myName.substring(0,4)+'x'+myName.substring(5);
+
+  
 // Array: []
 array.length;
 Arrays.sort(int[]);
