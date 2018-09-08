@@ -1,4 +1,8 @@
 // 19%
+
+// Note: use List to store all the neighbors -> Optimize 
+        // since index == node number 
+
 public int countComponents(int n, int[][] edges) {
         if (n == 0) return 0;
         if (n == 1) return 1;
