@@ -6,6 +6,11 @@
   // 1. 4 [[0,1],[2,3]]: when there are 2 trees, not connected to each other 
   // 2. 1 []
   
+// NOTES!! 
+  // IF TREE: edges number == n-1 
+  if (edges.length != n - 1) {
+            return false;
+        }
 // mine: 8.4%
 class Solution {
     public boolean validTree(int n, int[][] edges) {
