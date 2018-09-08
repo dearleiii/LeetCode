@@ -7,6 +7,9 @@
         }
         return true;
         */
+// note2: 
+  // can put all functions in one main func;
+  // no need to initialize Set<Integer> separately, it's initialized when new HashMap<>();
   
 class Solution {
     public boolean sequenceReconstruction(int[] org, List<List<Integer>> seqs) {
