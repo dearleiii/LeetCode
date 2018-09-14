@@ -62,6 +62,47 @@ public List<String> binaryTreePaths(TreeNode root) {
         }
         return path;
 
+        // Mine 2nd time: 53%
+class Solution {
+    List<String> paths = new ArrayList<>();
+    public List<String> binaryTreePaths(TreeNode root) {
+        if (root == null) return paths;
+        StringBuilder path = new StringBuilder();
+        path.append(root.val);
+        
+        getPath(root, path);
+        return paths;
+    }
+    
+    private void getPath(TreeNode root, StringBuilder currPath) {
+        if (root.left == null && root.right == null) {
+            paths.add(currPath.toString());
+            return;
+        }
+        
+        if (root.left == null) {
+            currPath.append("->" + Integer.toString(root.right.val));
+            // currPath.append(root.right.val);
+            getPath(root.right, currPath);
+            return;
+        }
+        
+        if (root.right == null) {
+            currPath.append("->" + Integer.toString(root.left.val));
+            // currPath.append(root.left.val);
+            getPath(root.left, currPath);
+            return;
+        }
+        
+        currPath.append("->");
+        StringBuilder left = new StringBuilder(currPath);
+        getPath(root.left, left.append(root.left.val));
+        StringBuilder right = new StringBuilder(currPath);
+        getPath(root.right, right.append(root.right.val));
+        return;
+    }
+}
+        
 // Iteration : 91% ~ 10ms 
 public List<String> binaryTreePaths(TreeNode root) {
         List<String> paths = new ArrayList<>();
