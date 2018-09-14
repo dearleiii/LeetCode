@@ -103,6 +103,22 @@ class Solution {
     }
 }
         
+// String can directly pass in modified string value, stringBuilder can not 
+        if (root.right == null) {
+            // currPath.append("->" + Integer.toString(root.left.val));
+            getPath(root.left, currPath.append("->" + Integer.toString(root.left.val)));
+            return;
+        }
+        
+        // currPath.append("->");
+        // StringBuilder left = new StringBuilder(currPath);
+        getPath(root.left, currPath.append("->" + Integer.toString(root.left.val)));
+        // StringBuilder right = new StringBuilder(currPath);
+        getPath(root.right, currPath.append("->" + Integer.toString(root.right.val)));
+        return;
+        
+        // -> Wrong!!
+        
 // Iteration : 91% ~ 10ms 
 public List<String> binaryTreePaths(TreeNode root) {
         List<String> paths = new ArrayList<>();
@@ -123,3 +139,5 @@ public List<String> binaryTreePaths(TreeNode root) {
         if (root.right != null)
             helper(root.right, path+ "->" + String.valueOf(root.right.val), paths);
     }
+        
+     
