@@ -29,6 +29,7 @@ class Solution {
 }
 
 // jiuzhang: 99%
+    // only difference: no need to check null in main()
  helper(root);
     }
     
