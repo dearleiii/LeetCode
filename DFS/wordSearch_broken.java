@@ -6,6 +6,18 @@
 // expected: []
 // output: ["aaa"]
 
+// fix in main func. should mark the starting position as visited :
+/*
+        for (int i = 0; i < board[0].length; i++) {
+            for (int j = 0; j < board.length; j++) {
+                visited[j][i] = true;
+                dfs(board, i, j, String.valueOf(board[j][i]), visited, prefixes, resSet);
+                visited[j][i] = false;
+            }
+        }
+        */
+
+
 class Solution {
     public static int[] dx = {0, 1, 0, -1};
     public static int[] dy = {-1, 0, 1, 0};
