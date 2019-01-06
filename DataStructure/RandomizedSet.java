@@ -1,9 +1,19 @@
 /*
-/** Get a random element from the set. */
+/** Get a random element from the set. 
     public int getRandom() {
         return nums.get(rand.nextInt(nums.size()));
     }
     */
+// when update: always remember to update both the hashmap + list
+/*
+if (idx != nums.size()-1) {
+            // swap
+            int temp = nums.get(idx);
+            int last = nums.get(nums.size()-1);
+            nums.set(idx, last);
+            item2index.put(last, idx);
+        }
+        */
 
 class RandomizedSet {
     private Map<Integer, Integer> num2index;
