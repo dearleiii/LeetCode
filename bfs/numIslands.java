@@ -86,3 +86,46 @@ private void markByBFS(char[][] grid, int currX, int currY) {
             // end of checking at current position -> next while iter.
         }
     }
+
+// dfs version: 
+class Solution {
+    public int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0 || grid[0] == null || grid[0].length == 0)
+            return 0;
+        int n = grid.length;
+        int m = grid[0].length;
+        int islands = 0;
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (grid[i][j] - '0' == 1) {
+                    grid[i][j] = '0';
+                    markBFS(grid, i, j);
+                    islands++;
+                }
+            }
+        }
+        
+        return islands;
+    }
+    
+    private void markBFS(char[][] grid, int x, int y) {
+        int[] xDiff = new int[]{-1, 1, 0, 0};
+        int[] yDiff = new int[]{0, 0, -1, 1};
+        
+        int xCurr, yCurr;
+        for (int i = 0; i < 4; i++) {
+            xCurr = x + xDiff[i];
+            yCurr = y + yDiff[i];
+            // System.out.printf("x: %d, y: %d\n", xCurr, yCurr);
+            if (inBound(grid, xCurr, yCurr) && grid[xCurr][yCurr] - '0' == 1) {
+                grid[xCurr][yCurr] = '0';
+                markBFS(grid, xCurr, yCurr);
+            }
+        }
+    }
+    
+    private boolean inBound(char[][] grid, int xCurr, int yCurr) {
+        return xCurr >=0 && yCurr >= 0 && xCurr < grid.length && yCurr < grid[0].length;
+    }
+}
