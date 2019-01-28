@@ -80,3 +80,7 @@ boolean[] array = new boolean[size]; // initialized to false
 // Conversion 
 String str = "testString";
 char[] charArray = str.toCharArray();
+
+
+//Comparator 
+
