@@ -1,3 +1,19 @@
+/*
+Use Comparator: 
+    Collections.sort(connections, comp);
+Implement Comparator: 
+     static Comparator<Connection> comp = new Comparator<Connection>() {
+        public int compare(Connection a , Connection b) {
+            if (a.cost != b.cost)
+                return a.cost - b.cost;
+            if (a.city1.equals(b.city1)) {
+                return a.city2.compareTo(b.city2);
+            } 
+            return a.city1.compareTo(b.city1);
+        }
+    };
+*/
+
 /**
  * Definition for a Connection.
  * public class Connection {
