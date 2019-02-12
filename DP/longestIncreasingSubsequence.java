@@ -27,3 +27,7 @@ public class Solution {
         return res;
     }
 }
+
+
+// version  print out path 
+
